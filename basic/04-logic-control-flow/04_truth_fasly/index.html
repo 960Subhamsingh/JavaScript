@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const  x = 3;
+        // checking for literal 0
+        if(x){
+            document.write(`You have ${x} truth`);
+            console.log(`You have ${x} truth`)
+        }else{
+            console.log("Please enter write number ");
+        }
+
+        //  Checking for empty arrays
+        const y = ['subham ','kumar'];
+
+        // Always true even when empty
+        if(y){
+            console.log("list of y");
+        }else{
+            console.log("No Data ")
+        }
+
+        if(y.length>0){
+            console.log(`${y.length}`)
+        }else{
+            console.log("not data")
+        }
+        // Checking for empty objects
+        const user = {
+            name: 'Brad',
+        };
+    // Always true, even when no properties
+        if (user) {
+            console.log('List User');
+        } else {
+          console.log('No User');
+        }
+    // Solution
+    if (Object.keys(user).length > 0) {
+        console.log('List User');
+    } else {
+        console.log('No User');
+    }
+
+     
+    </script>
+</body>
+</html>
